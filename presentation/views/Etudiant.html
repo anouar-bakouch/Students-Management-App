@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script type="module" src="./static/js/etudiant.js" defer></script>
+    <title>etudiant</title>
+</head>
+<body>
+
+<div class="navbar navbar-expand bg-primary">
+
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#">etudiant</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#">option</a>
+    </li>
+    </ul>
+
+</div>
+
+<div class="row mt-5">
+
+    <div class="col col-6 d-flex flex-column justify-content-center align-items-center">
+
+        <div class="mb-3">
+            <label class="form-label" for="cneInput">cne</label>
+            <input id="cneInput" class="form-control" placeholder="cne" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="prenomInput">prenom</label>
+            <input id="prenomInput" class="form-control" placeholder="prenom" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="nomInput">nom</label>
+            <input id="nomInput" class="form-control" placeholder="nom" />
+        </div>
+
+        <div class="mb-3">
+            <select class="form-select" id="optionSelect">
+
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <button id="addEtudiant" class="btn btn-primary" type="submit">ajouter</button>
+        </div>
+
+
+    </div>
+    <div class="col mt-5">
+
+        <table class="table table-responsive">
+
+            <thead>
+            <tr>
+
+                <th scope="col">cne</th>
+                <th scope="col">prenom</th>
+                <th scope="col">nom</th>
+                <th scope="col">option</th>
+                <th scope="col">action</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="tbody_etudiant">
+
+
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
